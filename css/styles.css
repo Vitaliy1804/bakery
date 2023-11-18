@@ -282,6 +282,26 @@ ul {
   font-weight: 300;
 }
 
+/* Carousel */
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary-dark);
+  cursor: pointer;
+}
+
+.carousel-button:hover {
+  background-color: var(--color-primary-dark);
+  fill: var(--color-primary-light);
+}
+
+
 /* Contact section */
 .contact-title {
   margin-bottom: 16px;
@@ -298,14 +318,23 @@ ul {
 .address-link:hover {
   color: var(--color-brand-light);
 }
+
+.address-social {
+  fill: var(--color-primary-light);
+}
+
+.address-social:hover {
+  fill: var(--color-brand-light);
+}
+
 .address-copyright {
   font-size: 14px;
 }
 
-/* Footer */
+
 .footer {
   background-color: var(--color-primary-dark);
-  background-image: url('../images/footer.svg');
+  background-image: url('../images/footer.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
