@@ -1,0 +1,87 @@
+.footer {
+  padding: 32px 0;
+  position: relative;
+  background-color: var(--color-primary-dark);
+  background-image: url('../images/footer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer::before,
+.footer::after {
+  position: absolute;
+  bottom: 0;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.footer::before {
+  width: 180px;
+  height: 120px;
+  left: 0;
+  background-image: url('../images/bread-small.png');
+}
+
+.footer::after {
+  height: 190px;
+  width: 380px;
+  right: 0;
+  background-image: url('../images/bread-large.png');
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav {
+  flex-basis: 50%;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-address {
+  flex-basis: 50%;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-logo {
+  flex-grow: 1;
+}
+
+.footer-menu {
+  flex-grow: 1;
+}
+
+.address-list {
+  flex-grow: 1;
+}
+
+.address-info {
+  flex-grow: 1;
+}
+
+.address-link {
+  color: var(--color-primary-light);
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.address-link:hover {
+  color: var(--color-brand-light);
+}
+
+.address-social {
+  fill: var(--color-primary-light);
+}
+
+.address-social:hover {
+  fill: var(--color-brand-light);
+}
+
+.address-copyright {
+  font-size: 14px;
+}
