@@ -1,9 +1,11 @@
 .contact-section {
   padding-bottom: 96px;
+  
 
   &__container {
     display: flex;
     gap: 32px;
+   
   }
   
   &__map {
@@ -14,6 +16,8 @@
 
   &__form-field {
     margin-bottom: 24px;
+    width: 100%;
+    max-width: 500px;
   }
   
   &__title {
@@ -23,7 +27,7 @@
 
   &__button {
     display: block;
-    margin: 0 auto 24px;
+    margin: 0 auto 16px;
   }
   
 }
