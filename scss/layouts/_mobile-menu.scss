@@ -12,11 +12,37 @@
     transform: translateX(0);
   }
 
+  &__container {
+    padding: 16px 24px;
+  }
+
+  &__logo {
+    max-width: 72px;
+    height: 38px;
+    margin-bottom: 30px;
+  }
+
+  &__nav {
+    width: 100%;
+  }
+
   &__btn-close {
     position: absolute;
     top: 16px;
     right: 24px;
     border: none;
     background-color: transparent;
+  }
+
+  &__link {
+    color: black;
+    line-height: 1.5;
+    text-decoration: none;
+    transition: color .3s;
+    padding-bottom: 16px;
+  }
+  
+  &__link:hover {
+    color: var(--color-brand-light);
   }
 }
