@@ -19,11 +19,12 @@
   &__logo {
     max-width: 72px;
     height: 38px;
-    margin-bottom: 30px;
+    padding-bottom: 32px;
   }
 
   &__nav {
     width: 100%;
+    padding-top: 16px;
   }
 
   &__btn-close {
@@ -44,5 +45,14 @@
   
   &__link:hover {
     color: var(--color-brand-light);
+  }
+
+  &__pic {
+    width: 180px;
+    height: 240px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+   
   }
 }

@@ -1,7 +1,6 @@
 .footer {
-  
-  padding: 32px 0;
   position: relative;
+  padding: 32px 0;
   background-color: var(--color-primary-dark);
   background-image: url('../images/footer.png');
   background-repeat: no-repeat;
@@ -18,29 +17,72 @@
   }
 
   &::before {
-    width: 180px;
-    height: 120px;
+    position: absolute;
+    width: 92px;
+    height: 196px;
     left: 0;
-    background-image: url('../images/bread-small.png');
+    top: 60px;
+    background-image: url('../images/small-bread-mobile.png');
+
+    @media screen and (min-width: $bp-tablet) {
+      position: absolute;
+      width: 180px;
+      height: 122px;
+      left: 0;
+      top:auto;
+      background-image: url('../images/bread-small.png');
+    }
+    @media screen and (min-width: $bp-desktop) {
+      position: absolute;
+      width: 180px;
+      height: 122px;
+      right: 0;
+      bottom: 0;
+      background-image: url('../images/bread-small.png');
+    }
   }
 
   &::after {
-    height: 190px;
-    width: 380px;
-    right: 0;
-    background-image: url('../images/bread-large.png');
+    position: absolute;
+    height: 92px;
+    width: 103px;
+    right: 0px;
+    bottom: 0px;
+    background-image: url('../images/bread-large-mobile.png');
+
+    @media screen and (min-width: $bp-tablet) {
+      position: absolute;
+      width: 310px;
+      height: 188px;
+      right: 0;
+      bottom: 0;
+      background-image: url('../images/bread-large.png');
+    }
+    @media screen and (min-width: $bp-desktop) {
+      position: absolute;
+      width: 309px;
+      height: 188px;
+      right: 0;
+      bottom: 0;
+      background-image: url('../images/bread-large.png');
+    }
   }
 
   &__container {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 0 50px;
 
     
     @media screen and (min-width: $bp-tablet){
       flex-direction: row;
+      padding: 0 24px;
     }
-
+    @media screen and (min-width: $bp-desktop){
+      padding: 0 24px;
+    }
+      
   }
 
   &__nav,
@@ -81,6 +123,16 @@
   &__address-container {
     display: flex;
     justify-content: center;
+    padding-top: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      justify-content: start;
+    } 
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      justify-content: start;
+    } 
   }
 
   &__address-social {
@@ -93,6 +145,7 @@
 
   &__address-copyright {
     font-size: 14px;
+    color: var(--color-secondary-dark);
   }
 }
 
