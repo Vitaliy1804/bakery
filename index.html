@@ -36,7 +36,7 @@
       <div class="mobile-menu">
         <div class="mobile-menu__container">
         
-        <button class="mobile-menu__btn-close menu-btn-close" type="button">close x</button>
+        <button class="mobile-menu__btn-close menu-btn-close" type="button">X</button>
         <div class="mobile-menu__nav">
           <a class="mobile-menu__logo" href="/">
             <img src="./images/logo-mobile.svg" alt="Логотип сучасної пекарні">
@@ -409,7 +409,7 @@
 
  
  
-  <div class="backdrop visually-hidden">
+  <div class="backdrop">
 
     <div class="modal">
       <button class="modal__btn-close modal-btn-close" type="button">
@@ -417,7 +417,7 @@
       </button>
       <h2>Замовити дзвінок</h2>
       <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-      <form name="modal-form" autocomplete="off">
+      <form name="modal-form" class="modal_form" autocomplete="off">
         <div class="modal__form-field input">
         <label class="input__label visually-hidden" for="user-name">
           Ім’я 
@@ -432,7 +432,7 @@
           />
         </div>
         
-        <div class="contact-section__form-field input">
+        <div class="modal__form-field input">
         <label class="input__label visually-hidden" for="user-tel">
           Телефон
         </label>
@@ -446,7 +446,7 @@
           />
         </div>
 
-        <div class="contact-section__form-field input">
+        <div class="modal__form-field input">
         <label class="input__label visually-hidden" for="user-email">
           Електронна пошта
         </label>
